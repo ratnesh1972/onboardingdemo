@@ -4,12 +4,14 @@ import OnBoardingPage1 from "./components/onboardingpage1";
 import OnBoardingPage2 from "./components/onboardingpage2";
 import OnBoardingPage3 from "./components/onboardingpage3";
 import OnBoardingPage4 from "./components/onboardingpage4";
+import ProgressCounter from "./components/progresscounter/ProgressCounter";
 
 const App = () => {
   return (
     <div className="App">
       <Logo />
-      <OnBoardingPage4 />
+      <ProgressCounter />
+      <OnBoardingPage1 />
     </div>
   );
 };

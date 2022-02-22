@@ -167,3 +167,90 @@ input {
   width: 30px;
   height: 30px;
 }
+
+//Progress Counter Utilities
+.progress-counter-box {
+  margin: 80px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin counter-template {
+  font-size: 12px;
+  padding: 10px 15px;
+  border-radius: 100%;
+  position: relative;
+}
+
+@mixin counter-content {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  top: 50%;
+  position: absolute;
+}
+
+.counter {
+  @include counter-template();
+  color: $grey3;
+  background: none;
+  border: 1px solid $grey2;
+}
+
+.counter-active {
+  @include counter-template();
+  color: $grey1;
+  background: $primary;
+  border: 1px solid $primary;
+}
+
+.right,
+.right-active {
+  margin-right: 30px;
+}
+
+.left,
+.left-active {
+  margin-left: 20px;
+}
+
+.right:after {
+  @include counter-content();
+  background: $grey2;
+  left: 37px;
+}
+
+.left:before {
+  @include counter-content();
+  background: $grey2;
+  right: 37px;
+}
+
+.right-active:after {
+  @include counter-content();
+  background: $primary;
+  left: 37px;
+}
+
+.left-active:before {
+  @include counter-content();
+  background: $primary;
+  right: 37px;
+}
+
+//Logo Utilities
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: $dark;
+}
+
+.logoimg {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+}

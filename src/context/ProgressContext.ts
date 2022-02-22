@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import { createContext } from "react";
 import { ProgressContextType } from "../types/progressTypes";
 
 //Creating ProgressContext to pass the state down the component tree.

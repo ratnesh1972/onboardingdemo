@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import ProgressContext from "../../context/ProgressContext";
 
 function LaunchButton() {

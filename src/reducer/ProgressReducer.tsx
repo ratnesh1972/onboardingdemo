@@ -1,4 +1,3 @@
-import ProgressCounter from "../components/progresscounter/ProgressCounter";
 import {
   INCREMENTCOUNTER,
   SAVEPERSONALDETAILS,

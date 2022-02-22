@@ -1,5 +1,4 @@
 // Define variables, utilities classes to use across your application.
-
 $dark: #191919;
 $grey1: #f4f6f9;
 $grey2: #bdc5d6;
@@ -30,6 +29,8 @@ p {
   color: $grey4;
 }
 
+//Form Utilities
+
 label {
   font-size: 14px;
   font-weight: 500;
@@ -51,6 +52,8 @@ input {
   color: $grey2;
 }
 
+//Button Utilities
+
 .btn-primary {
   padding: 12px;
   color: $grey1;
@@ -60,19 +63,38 @@ input {
   width: 100%;
 }
 
+//Sizing Utilies
+
 .container {
   max-width: 1100px;
   padding: 0px 16px;
   margin: auto;
 }
 
+.box {
+  width: 36%;
+  margin: auto;
+}
+
+//Text Utilities
+.text-body-dark {
+  font-size: 16px;
+  font-weight: 500;
+  color: $grey3;
+}
+
+.text-body-light {
+  font-size: 14px;
+  color: $grey2;
+}
 .text-center {
   text-align: center;
 }
 
-.box {
-  width: 36%;
-  margin: auto;
+//Image Utilities
+.icon-img {
+  width: 30px;
+  height: 30px;
 }
 
 // Form utilities
@@ -154,24 +176,6 @@ input {
   }
 }
 
-//Text Utilities
-.text-body-dark {
-  font-size: 16px;
-  font-weight: 500;
-  color: $grey3;
-}
-
-.text-body-light {
-  font-size: 14px;
-  color: $grey2;
-}
-
-//Image Utilities
-.icon-img {
-  width: 30px;
-  height: 30px;
-}
-
 //Progress Counter Utilities
 .progress-counter-box {
   margin: 80px 0px;
@@ -208,6 +212,7 @@ input {
   color: $grey1;
   background: $primary;
   border: 2px solid $primary;
+  transition: background 0.3s ease-in, border 0.3s ease-in;
 }
 
 .right,
@@ -236,12 +241,14 @@ input {
   @include counter-content();
   background: $primary;
   left: 37px;
+  transition: background 0.2s linear;
 }
 
 .left-active:before {
   @include counter-content();
   background: $primary;
   right: 37px;
+  transition: background 0.2s linear;
 }
 
 //Logo Utilities
@@ -257,4 +264,11 @@ input {
   width: 32px;
   height: 32px;
   margin-right: 5px;
+}
+
+//Media Query for Box size
+@media (max-width: 600px) {
+  .box {
+    width: 100%;
+  }
 }

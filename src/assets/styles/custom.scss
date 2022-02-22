@@ -126,6 +126,10 @@ input {
     cursor: pointer;
   }
 
+  .active {
+    border-color: $primary;
+  }
+
   &-link:nth-child(1) {
     margin-right: 20px;
   }
@@ -203,29 +207,29 @@ input {
   @include counter-template();
   color: $grey1;
   background: $primary;
-  border: 1px solid $primary;
+  border: 2px solid $primary;
 }
 
 .right,
 .right-active {
-  margin-right: 30px;
+  margin-right: 27px;
 }
 
 .left,
 .left-active {
-  margin-left: 20px;
+  margin-left: 27px;
 }
 
 .right:after {
   @include counter-content();
   background: $grey2;
-  left: 37px;
+  left: 38px;
 }
 
 .left:before {
   @include counter-content();
   background: $grey2;
-  right: 37px;
+  right: 38px;
 }
 
 .right-active:after {

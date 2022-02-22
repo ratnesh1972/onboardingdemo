@@ -1,10 +1,7 @@
 import React from "react";
+import { HeadingType } from "../../types/progressTypes";
 
-interface heading {
-  title: String;
-  subtitle: String;
-}
-const Description = (props: heading) => {
+const Description = (props: HeadingType) => {
   return (
     <div className="description-box">
       <h1>{props.title}</h1>

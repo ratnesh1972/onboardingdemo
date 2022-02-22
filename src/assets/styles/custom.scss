@@ -1,0 +1,169 @@
+// Define variables, utilities classes to use across your application.
+
+$dark: #191919;
+$grey1: #f4f6f9;
+$grey2: #bdc5d6;
+$grey3: #40434a;
+$grey4: #9ba0ab;
+$primary: #5a4ad1;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: $dark;
+}
+
+p {
+  color: $grey4;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: $grey3;
+  display: block;
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid $grey1;
+  border-radius: 6px;
+  display: block;
+  width: 100%;
+}
+
+::placeholder {
+  color: $grey2;
+}
+
+.btn-primary {
+  padding: 12px;
+  color: $grey1;
+  background: $primary;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0px 16px;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.box {
+  width: 36%;
+  margin: auto;
+}
+
+// Form utilities
+.form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+  &-adornment {
+    display: flex;
+    flex-direction: row;
+
+    span {
+      padding: 12px;
+      border: 1px solid $grey1;
+      border-radius: 6px 0px 0px 6px;
+      width: auto;
+      color: $grey4;
+      background: $grey1;
+      font-size: 14px;
+    }
+
+    input {
+      border-radius: 0px 6px 6px 0px;
+    }
+  }
+}
+
+.form-optional {
+  color: $grey2;
+}
+
+// Description utilities
+.description-box {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+//Planning Utilities
+.plan-group {
+  display: flex;
+  margin-bottom: 20px;
+
+  &-link {
+    padding: 16px 20px;
+    border: 1px solid $grey1;
+    border-radius: 6px;
+    width: auto;
+    cursor: pointer;
+  }
+
+  &-link:nth-child(1) {
+    margin-right: 20px;
+  }
+
+  &-link:hover {
+    border: 1px solid $primary;
+  }
+}
+
+//Launch Page Utilities
+.checkicon-group {
+  background: $primary;
+  padding: 20px;
+  width: 65px;
+  border-radius: 100%;
+  text-align: center;
+  margin: 0px auto 60px auto;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+//Text Utilities
+.text-body-dark {
+  font-size: 16px;
+  font-weight: 500;
+  color: $grey3;
+}
+
+.text-body-light {
+  font-size: 14px;
+  color: $grey2;
+}
+
+//Image Utilities
+.icon-img {
+  width: 30px;
+  height: 30px;
+}

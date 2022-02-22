@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Logo from "./components/logo/Logo";
+import OnBoardingPage1 from "./components/onboardingpage1";
+import OnBoardingPage2 from "./components/onboardingpage2";
+import OnBoardingPage3 from "./components/onboardingpage3";
+import OnBoardingPage4 from "./components/onboardingpage4";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Logo />
+      <OnBoardingPage4 />
     </div>
   );
-}
+};
 
 export default App;

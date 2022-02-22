@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# Eden - Interactive onboarding page demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What this project does? 🤔
 
-## Available Scripts
+- This is a simple demo of an onboarding page of a fictional workspace management application.
+- On boarding process is divided in 4 parts.
+- On each page, we enter info and move forward.
+- If you click 'Launch Eden' on last page, your application state will get reset.
 
-In the project directory, you can run:
+## Tools & Libraries used 🤗
 
-### `npm start`
+- create-react-app my-app --template typescript - For templating.
+- sass - To write my custom.scss
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Implementation Details 🧑🏼‍💻
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Project is built in Reactjs.
+- Used context to store details of each page.
+- Used useState to manage component states.
+- Used useReducer to dispatch actions depending on state changes.
 
-### `npm test`
+## How to run this project? 🏃🏻‍♂️
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clone this repository.
+- Make sure node is installed on your computer, if node is installed ? 'npm install' : 'install node first :)'
+- To run this application in dev mode use - npm start
+- To create production build of this application - npm run build
 
-### `npm run build`
+## Wow 😍, but where did you get the design?
+- I used this design from dribble - https://dribbble.com/shots/15669113-Onboarding-Exploration/attachments/7464145?mode=media
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Hosted on Netlify - 

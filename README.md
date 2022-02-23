@@ -15,9 +15,10 @@
 ## Implementation Details 🧑🏼‍💻
 
 - Project is built in Reactjs.
-- Used context to store details of each page.
-- Used useState to manage component states.
-- Used useReducer to dispatch actions depending on state changes.
+- Used context to store application state and share it to multiple components.
+- Used useState hook to manage component states.
+- Used useReducer hook to dispatch actions depending on state changes.
+- Used sass style of css to create custom.scss which is the mail stylesheet for this application. Made if from scratch. No css frameworks.
 
 ## How to run this project? 🏃🏻‍♂️
 
@@ -29,4 +30,4 @@
 ## Wow 😍, but where did you get the design?
 - I used this design from dribble - https://dribbble.com/shots/15669113-Onboarding-Exploration/attachments/7464145?mode=media
 
-## Hosted on Netlify - 
+## Hosted on Netlify - https://onboardingdemo.netlify.app/

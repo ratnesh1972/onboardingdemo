@@ -32,6 +32,7 @@ function WorkspaceDetails() {
             placeholder="Eden"
             value={state.workspace}
             onChange={handleWorkspaceChange}
+            required
           ></input>
         </div>
         <div className="form-group">
@@ -46,6 +47,7 @@ function WorkspaceDetails() {
               placeholder="Example"
               value={state.url}
               onChange={handleURLChange}
+              required
             ></input>
           </div>
         </div>

@@ -12,41 +12,7 @@ function WorkspaceDetails() {
 
   const [url, seturl] = useState({
     value: "",
-    error: "",
-    isValidated: false,
   });
-
-  //Function to validate url - After changing state, returning true or false as state update takes time and might give different results in handleSubmit.
-  const validateUrl = () => {
-    const value = url.value;
-    const pattern = /\b(https?|ftp|file):\/\/[A-Za-z0-9+&@#%?=~_|!:,.;]*[A-Za-z0-9+&@#%=~_|]/;
-    if (value !== "") {
-      if (pattern.test(value)) {
-        //Change state to pass validation
-        seturl({ ...url, isValidated: true });
-        //Return true as we are passing the validation.
-        return true;
-      } else {
-        //Change state to fail validation and update error
-        seturl({
-          ...url,
-          error: "Please enter valid url!",
-          isValidated: false,
-        });
-        //Return false as we are not passing the validation.
-        return false;
-      }
-    } else {
-      //Change state to fail validation and update error.
-      seturl({
-        ...url,
-        error: "Url is required!",
-        isValidated: false,
-      });
-      //Return false as we are not passing the validation.
-      return false;
-    }
-  };
 
   //Function to validate workspace.
   const validateWorkspace = () => {
@@ -78,9 +44,8 @@ function WorkspaceDetails() {
     e.preventDefault();
 
     const workspaceValidation = validateWorkspace();
-    const urlValidation = validateUrl();
 
-    if (workspaceValidation && urlValidation) {
+    if (workspaceValidation) {
       const data = {
         workspace: workspace.value,
         url: url.value,
@@ -122,9 +87,6 @@ function WorkspaceDetails() {
               required
             ></input>
           </div>
-          {!url.isValidated && (
-            <label className="label-error">{url.error}</label>
-          )}
         </div>
         <button className="btn-primary" type="submit" onClick={handleSubmit}>
           Create Workspace
